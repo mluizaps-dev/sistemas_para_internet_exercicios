@@ -30,5 +30,6 @@ public class aula01 {
         c1.status();
         c1.tampar();
         c1.estaTampado();
+        teste.close();
     }
 }
