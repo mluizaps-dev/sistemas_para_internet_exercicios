@@ -11,5 +11,7 @@ public class area {
         dimensao2 = leitura.nextDouble();
 
         System.out.println("Área = " + (dimensao1 * dimensao2));
+
+        leitura.close();
     }
 }

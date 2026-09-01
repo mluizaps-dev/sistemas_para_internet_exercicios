@@ -15,5 +15,7 @@ public class temperatura {
         System.out.println("Temperatura em kelvin: " + temperaturaKelvin);
         System.out.println("Temperatura em Fahrenheit: " + temperaturaFahrenheit);
 
+        leitura.close();
+
     }
 }

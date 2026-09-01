@@ -2,7 +2,7 @@ package aulas;
 
 import java.util.Scanner;
 
-public class exercicio2 {
+public class exercicioSuperHomem {
     public static void main(String[] args) {
         int energia, min;
         Scanner leitura = new Scanner(System.in);
@@ -15,5 +15,7 @@ public class exercicio2 {
 
         System.out.println(superHomem);
         System.out.println(energiaKilojoules);
+
+        leitura.close();
     }
 }
