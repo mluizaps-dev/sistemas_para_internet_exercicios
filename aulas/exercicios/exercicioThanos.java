@@ -1,4 +1,4 @@
-package aulas;
+package aulas.exercicios;
 
 import java.util.Scanner;
 
@@ -20,7 +20,7 @@ public class exercicioThanos {
         totalHorarioDeChegadaMin = ((horarioDeChegada * 60) + horarioDeChegadaMin);
         System.out.println(horarioDeChegada + "h" + horarioDeChegadaMin + "min");
 
-        if ((totalHorarioDeChegadaMin + totalHorarioDeSaidaMin) >= (24 * 60)) {
+        if ((totalHorarioDeChegadaMin - totalHorarioDeSaidaMin) >= (24 * 60)) {
             System.out.println("ERRO! Você demorou mais de 24 horas para chegar! Thanos está irritado.");
         } else {
             System.out.println("Tempo de espera: " + (totalHorarioDeChegadaMin - totalHorarioDeSaidaMin));
