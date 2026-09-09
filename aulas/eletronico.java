@@ -56,5 +56,7 @@ public class eletronico {
 
         System.out.println("PROGRAMA ENCERRADO!");
 
+        leitura.close();
+
     }
 }
