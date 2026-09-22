@@ -1,4 +1,4 @@
-package aulas;
+package aulas.projeto1;
 
 public class Componentes {
     String name;

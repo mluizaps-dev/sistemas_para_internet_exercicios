@@ -1,6 +1,5 @@
 package aulas.modularizacao;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class exercicioQuadrilha {
@@ -14,24 +13,26 @@ public class exercicioQuadrilha {
         System.out.println("Quantidade de anos: ");
         quadrilha.quantidadeAnos = leitura.nextInt();
 
+        int lista[] = new int[quadrilha.quantidadeAnos];
+
         for(int i = 0; i < quadrilha.quantidadeAnos; i++){
             System.out.println("Quantas pessoas foram a quadrilha de " + quadrilha.anoInicial++ + "?: ");
-            int anoInicial = quadrilha.quantidadePessoas;
-            int anoAtual = leitura.nextInt();
-            int cresimento = anoAtual - anoInicial;
-            System.out.println(cresimento);
-            // System.out.println(quadrilha.quantidadePessoas);
+            lista[i++] = leitura.nextInt();
         }
 
-        // int lista[] = new int[quadrilha.quantidadeAnos];
+        int menorPublico = lista[1] - lista[0];
+        int anoMenor = 1;
+        int i = 1;
 
-        // for(int i = 0; i < quadrilha.quantidadeAnos; i++){
-        //     System.out.println("Quantas pessoas foram a quadrilha de " + quadrilha.anoInicial++ + "?: ");
-        //     quadrilha.quantidadePessoas = leitura.nextInt();
-        //     lista[i] = quadrilha.quantidadePessoas;
-        // }
+        while (i < quadrilha.quantidadeAnos - 1) {
+            if ((lista[i + 1] - lista[i]) < menorPublico) {
+                menorPublico = lista[i + 1] - menorPublico;
+                anoMenor = i+1;
+            }
+            i++;
+        }
 
-        // System.out.println(Arrays.toString(lista));
+        System.out.println("O ano com menor crescimento é " + anoMenor);
 
         leitura.close();
     }

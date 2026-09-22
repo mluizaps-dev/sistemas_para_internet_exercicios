@@ -25,7 +25,7 @@ public class exercicioBanco {
         System.out.println("a) Saldo");
         System.out.println("b) Deposito");
         System.out.println("c) Ver minha conta");
-        String resposta = leitura.nextLine();
+        // String resposta = leitura.nextLine();
     
 
         leitura.close();
