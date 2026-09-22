@@ -41,13 +41,13 @@ public class exercicio5 {
         }
         System.out.println(Arrays.toString(lista2));
 
-        int contador = 0;
         for (int i = 0; i < lista3.length; i++) {
+            int contador = 0;
             for (String letra : lista1) {
                 System.out.println(letra);
-                if (letra == lista3[i]) {
+                if (letra.equals(lista3[i])) {
                     System.out.println(letra);
-                     contador++;
+                    contador++;
                 }
             }
             for (String letra : lista2) {
